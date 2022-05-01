@@ -1,0 +1,316 @@
+html {
+	scroll-behavior: smooth;
+	font-family: "Open Sans";
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+/* NAVIGATION BAR */
+
+nav {
+	position: fixed;
+	width: 100%;
+	background-image: linear-gradient(to right, rgba(50, 70, 80, 0.3), rgba(30, 20, 150, 0.3));
+	height: 100px;
+
+}
+
+#navbar {
+	transition: ease .75s;
+}
+
+ul {
+	display: flex;
+	justify-content: space-between;
+	align-content: space-around;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 2em;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+ul li a{
+	color: white;
+	text-decoration: none;
+	padding: 1em;
+	transition: ease .5s;
+	font-size: 1.5em;
+}
+
+ul li a:hover {
+	color: white;
+	background-color: black;
+	padding: .5em;
+}
+
+#brand-name:hover {
+	animation-name: colors;
+	animation-duration: 4s;
+	background-color: transparent;
+	padding: 28px;
+	color: orange;
+}
+
+@keyframes colors {
+ 	0%   {color: pink;}
+  	25%  {color: yellow;}
+  	50%  {color: red;}
+  	100% {color: orange;}
+}
+
+
+/* NAV BAR END */
+
+/* SLIDE SHOW */
+
+#home {
+	background-image: url("strawberry banana birds view.png");
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+
+}
+
+.hero-2 {
+	background-image: url("blueberry background.png");
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+}
+
+.hero-3 {
+	background-image: url("matcha birds view.png");
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+}
+
+/* SHOP */
+
+.shop {
+	height: 100vh;
+}
+
+.shop-title{
+	text-align: center;
+	padding: 5%;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-coloum-gap: 20%;
+  grid-row-gap: 30%;
+  justify-content: space-around;
+  align-items: space-around;
+}
+
+.grid-item {
+  border: 1px solid black;
+  border-radius: 50%;
+  text-align: center;
+  width: 20em;
+  height: 20em;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+}
+
+
+
+#sb {
+	background-image: url("strawberry.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#mango {
+	background-image: url("mango.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#berry {
+	background-image: url("berry.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#matcha {
+	background-image: url("matcha.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#peach {
+	background-image: url("peach.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#pina {
+	background-image: url("pina.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+
+@media only screen and (max-width: 1440px) {
+  .grid-item {
+    width: 10em;
+    height: 10em;
+  }
+
+  .about{
+  	margin-top: 4em;
+  }
+}
+
+
+
+
+@media only screen and (max-width: 900px){
+	.grid-item{
+		width: 7em;
+		height: 7em;
+	}
+
+	.about{
+		margin-top: 0;
+		height: auto;
+	}
+}
+
+
+.grid-item p {
+	padding-top: 45%;
+}
+
+/* SHOP */
+
+.about {
+	height: 100vh;
+	text-align: center;
+	 background: linear-gradient(to right, rgba(50, 70, 80, 0.7), rgba(30, 20, 150, 0.7)), url("about.jpg") no-repeat;
+	background-size: cover;
+	color: white;
+}
+
+.about h2 {
+	font-size: 2em;
+	padding: 5% 5% 10px 5%;
+}
+
+.about h3 {
+	font-size: 1.75em;
+	padding: 2%;
+}
+
+.about p {
+	font-size: 1.5em;
+	line-height: 2em;
+	margin: 15px
+}
+
+
+
+
+/* CONTACT AND FOOTER */
+
+
+
+.contact {
+	height: 50vh;
+	text-align: center;
+}
+
+.contact h2 {
+	font-size: 3em;
+	padding: 1.5em;
+}
+
+
+
+.form-container {
+	display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 3em;
+  height: 3em;
+  margin: 0 auto;
+  padding-top: 8%;
+  padding-bottom: 8%;
+
+  border: none;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+textarea {
+	height: 200px;
+	width: 500px;
+	margin: 10px;
+	padding: 10px;
+}
+
+input {
+	height: 20px;
+	width: 300px;
+	margin: 20px;
+}
+
+
+
+.fa {
+  padding: 2em;
+  font-size: 3em;
+  width: 3%;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.icon-container {
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+}
+
+
+
+
+
+
+
+
